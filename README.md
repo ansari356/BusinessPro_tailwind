@@ -1,5 +1,4 @@
 
-````markdown
 # BusinessPro - Business Website Template
 
 A modern, responsive website template designed for businesses, startups, and SaaS companies. Featuring a clean design and interactive elements powered by Tailwind CSS and JavaScript.
