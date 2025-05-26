@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BusinessPro - Complete Solution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+
+        }
+        .hero-bg {
+            background-image: radial-gradient(circle at top right, #4F46E5 0%, #818CF8 100%);
+        }
+        .feature-icon {
+            @apply w-12 h-12 rounded-lg flex items-center justify-center mb-4;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+   <!-- Navigation -->
+<nav class="bg-white shadow-lg fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <span class="text-2xl font-bold text-indigo-600">BusinessPro</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-indigo-600 transition-colors">Home</a>
+                <a href="#features" class="text-gray-600 hover:text-indigo-600 transition-colors">Features</a>
+                <a href="#pricing" class="text-gray-600 hover:text-indigo-600 transition-colors">Pricing</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-indigo-600 transition-colors">Testimonials</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition-colors">Contact</a>
+                <button class="bg-indigo-600 text-white px-6 py-2 rounded-full hover:bg-indigo-700 transition-colors">
+                    Get Started
+                </button>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden fixed w-full bg-white shadow-lg z-40" style="top: 64px;">
+    <div class="px-4 py-2">
+        <a href="#home" class="block py-3 px-4 text-gray-600 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">Home</a>
+        <a href="#features" class="block py-3 px-4 text-gray-600 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">Features</a>
+        <a href="#pricing" class="block py-3 px-4 text-gray-600 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">Pricing</a>
+        <a href="#testimonials" class="block py-3 px-4 text-gray-600 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">Testimonials</a>
+        <a href="#contact" class="block py-3 px-4 text-gray-600 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">Contact</a>
+        <div class="mt-4 p-4">
+            <button class="w-full bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-700 transition-colors">
+                Get Started
+            </button>
+        </div>
+    </div>
+</div>
+
+
+ <!-- Hero Section -->
+ <section class="hero-bg pt-32 pb-20 text-white" id="home">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center">
+            <h1 class="text-5xl font-bold mb-6 leading-tight">Transform Your Business <br> With Digital Solutions</h1>
+            <p class="text-xl mb-8 text-gray-200">Accelerate your business growth with our innovative digital solutions</p>
+            <button class="bg-white text-indigo-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100">Start Free Trial</button>
+        </div>
+    </div>
+</section>
+
+        <!-- Clients Section -->
+    <!-- Clients Section -->
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Trusted By Leading Companies</h3>
+            <p class="text-gray-600 max-w-2xl mx-auto">We partner with innovative organizations across industries to deliver exceptional results</p>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center">
+            <!-- Client 1 -->
+            <div class="p-4 flex justify-center opacity-70 hover:opacity-100 transition-opacity">
+                <img src="./images/google-1-1.svg" alt="Google" class="h-8">
+            </div>
+            
+            <!-- Client 2 -->
+            <div class="p-4 flex justify-center opacity-70 hover:opacity-100 transition-opacity">
+                <img src="./images/microsoft-6.svg" alt="Microsoft" class="h-8">
+            </div>
+
+            <!-- Client 3 -->
+            <div class="p-4 flex justify-center opacity-70 hover:opacity-100 transition-opacity">
+                <img src="./images/slack-2.svg" alt="Slack" class="h-8">
+            </div>
+
+            <!-- Client 4 -->
+            <div class="p-4 flex justify-center opacity-70 hover:opacity-100 transition-opacity">
+                <img src="./images/airbnb.svg" alt="Airbnb" class="h-10">
+            </div>
+
+            <!-- Client 5 -->
+            <div class="p-4 flex justify-center opacity-70 hover:opacity-100 transition-opacity">
+                <img src="./images/logo-amazon.svg" alt="Amazon" class="h-8">
+            </div>
+
+            <!-- Client 6 -->
+            <div class="p-4 flex justify-center opacity-70 hover:opacity-100 transition-opacity md:hidden lg:block">
+                <img src="./images/logo-spotify.svg" alt="Spotify" class="h-8">
+            </div>
+
+            <!-- Client 7 -->
+            <div class="p-4 flex justify-center opacity-70 hover:opacity-100 transition-opacity md:hidden lg:block">
+                <img src="./images/xiaomi-1.svg" alt="xiaomi" class="h-8">
+            </div>
+
+            <!-- Client 8 -->
+            <div class="p-4 flex justify-center opacity-70 hover:opacity-100 transition-opacity md:hidden lg:block">
+                <img src="https://cdn.worldvectorlogo.com/logos/netflix-3.svg" alt="Netflix" class="h-8">
+            </div>
+
+             <!-- Client 9 -->
+             <div class="p-4 flex justify-center opacity-70 hover:opacity-100 transition-opacity md:hidden lg:block">
+                <img src="./images/siemens-2.svg" alt="siemens" class="h-15">
+            </div>
+
+            
+             <!-- Client 10 -->
+             <div class="p-4 flex justify-center opacity-70 hover:opacity-100 transition-opacity md:hidden lg:block">
+                <img src="./images/suzuki-12.svg" alt="Suzuki" class="h-8">
+            </div>
+        </div>
+
+        <!-- Optional View More Button -->
+        <div class="text-center mt-12">
+            <button class="text-indigo-600 hover:text-indigo-700 font-medium">
+                View All Partners →
+            </button>
+        </div>
+    </div>
+</section>
+
+        
+    <!-- Features Section -->
+<section id="features" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">Powerful Features</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Everything you need to manage and grow your business effectively</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div class="p-8 bg-white rounded-xl shadow-sm hover:shadow-md transition-all animate-on-scroll opacity-0">
+                <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Lightning Fast Performance</h3>
+                <p class="text-gray-600">Optimized infrastructure ensures your business operations run smoothly 24/7</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="p-8 bg-white rounded-xl shadow-sm hover:shadow-md transition-all animate-on-scroll opacity-0">
+                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Advanced Analytics</h3>
+                <p class="text-gray-600">Real-time data insights and comprehensive reporting tools</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="p-8 bg-white rounded-xl shadow-sm hover:shadow-md transition-all animate-on-scroll opacity-0">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Bank-Grade Security</h3>
+                <p class="text-gray-600">Enterprise-level security with end-to-end encryption</p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="p-8 bg-white rounded-xl shadow-sm hover:shadow-md transition-all animate-on-scroll opacity-0">
+                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Custom Workflows</h3>
+                <p class="text-gray-600">Tailor-made processes that adapt to your business needs</p>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="p-8 bg-white rounded-xl shadow-sm hover:shadow-md transition-all animate-on-scroll opacity-0">
+                <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Team Collaboration</h3>
+                <p class="text-gray-600">Built-in tools for seamless team communication</p>
+            </div>
+
+            <!-- Feature 6 -->
+            <div class="p-8 bg-white rounded-xl shadow-sm hover:shadow-md transition-all animate-on-scroll opacity-0">
+                <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Automation Tools</h3>
+                <p class="text-gray-600">Smart automation for repetitive tasks and processes</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Pricing Section -->
+<section id="pricing" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">Simple, Transparent Pricing</h2>
+            <p class="text-gray-600">Choose the plan that works best for your business</p>
+            
+            <!-- Pricing Toggle -->
+            <div class="mt-8 flex justify-center items-center space-x-4">
+                <span class="text-gray-600">Monthly</span>
+                <button id="pricing-toggle" class="relative rounded-full w-12 h-6 bg-gray-200">
+                    <div id="toggle-switch" class="absolute w-6 h-6 bg-white rounded-full shadow-md transform transition-transform duration-300" style="transform: translateX(0px) translateY(-1px); top: -2px;" ></div>
+                </button>
+                <span class="text-gray-600">Annual <span class="text-green-500">(Save 20%)</span></span>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Basic Plan -->
+            <div class="p-8 bg-white border-2 border-gray-100 rounded-xl hover:border-indigo-100 transition-all animate-on-scroll opacity-0">
+                <div class="mb-6">
+                    <h3 class="text-2xl font-bold mb-2">Starter</h3>
+                    <p class="text-gray-600">Perfect for small teams</p>
+                </div>
+                <div class="mb-8">
+                    <div class="text-4xl font-bold">
+                        <span class="monthly-price">$29</span>
+                        <span class="annual-price hidden">$24</span>
+                        <span class="text-lg text-gray-500">/mo</span>
+                    </div>
+                    <p class="text-gray-600 mt-2">Billed <span class="monthly-price">monthly</span><span class="annual-price hidden">annually</span></p>
+                </div>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                        </svg>
+                        Up to 5 users
+                    </li>
+                    <!-- Add more features -->
+                </ul>
+                <button class="w-full bg-gray-100 text-gray-700 py-3 rounded-lg hover:bg-gray-200 transition-colors">
+                    Get Started
+                </button>
+            </div>
+
+            <!-- Pro Plan (Highlighted) -->
+            <div class="p-8 bg-indigo-600 text-white border-2 border-indigo-500 rounded-xl transform md:scale-105 animate-on-scroll opacity-0">
+                <div class="mb-6">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-2xl font-bold">Professional</h3>
+                        <span class="px-3 py-1 bg-indigo-500 rounded-full text-sm">Most Popular</span>
+                    </div>
+                    <p class="text-indigo-100">For growing businesses</p>
+                </div>
+                <div class="mb-8">
+                    <div class="text-4xl font-bold">
+                        <span class="monthly-price">$99</span>
+                        <span class="annual-price hidden">$79</span>
+                        <span class="text-lg text-indigo-200">/mo</span>
+                    </div>
+                    <p class="text-indigo-200 mt-2">Billed <span class="monthly-price">monthly</span><span class="annual-price hidden">annually</span></p>
+                </div>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                        </svg>
+                        Up to 20 users
+                    </li>
+                    <!-- Add more features -->
+                </ul>
+                <button class="w-full bg-white text-indigo-600 py-3 rounded-lg hover:bg-gray-100 transition-colors">
+                    Try Professional
+                </button>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="p-8 bg-white border-2 border-gray-100 rounded-xl hover:border-indigo-100 transition-all animate-on-scroll opacity-0">
+                <div class="mb-6">
+                    <h3 class="text-2xl font-bold mb-2">Enterprise</h3>
+                    <p class="text-gray-600">For large organizations</p>
+                </div>
+                <div class="mb-8">
+                    <div class="text-4xl font-bold">
+                        <span class="monthly-price">$299</span>
+                        <span class="annual-price hidden">$239</span>
+                        <span class="text-lg text-gray-500">/mo</span>
+                    </div>
+                    <p class="text-gray-600 mt-2">Billed <span class="monthly-price">monthly</span><span class="annual-price hidden">annually</span></p>
+                </div>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                        </svg>
+                        Unlimited users
+                    </li>
+                    <!-- Add more features -->
+                </ul>
+                <button class="w-full bg-gray-100 text-gray-700 py-3 rounded-lg hover:bg-gray-200 transition-colors">
+                    Contact Sales
+                </button>
+            </div>
+        </div>
+
+        <!-- Custom Plan Notice -->
+        <div class="text-center mt-12 text-gray-600">
+            <p>Need a custom plan? <a href="#contact" class="text-indigo-600 hover:underline">Contact us</a></p>
+        </div>
+    </div>
+</section>
+
+
+  <!-- Testimonials Section -->
+<section id="testimonials" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">Client Success Stories</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">See how we've helped businesses achieve remarkable results</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Testimonial 1 -->
+            <div class="p-8 bg-white rounded-xl shadow-sm hover:shadow-md transition-all animate-on-scroll opacity-0">
+                <div class="flex items-center mb-4">
+                    <img src="./images/3662400.webp" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <div class="font-semibold">Michael Johnson</div>
+                        <div class="text-gray-500">CEO, Tech Innovations</div>
+                    </div>
+                </div>
+                <p class="text-gray-600 mb-4">"BusinessPro helped us streamline operations and increase productivity by 150%. Their solutions are truly transformative."</p>
+                <div class="flex items-center text-yellow-400">
+                    ★★★★★
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="p-8 bg-white rounded-xl shadow-sm hover:shadow-md transition-all animate-on-scroll opacity-0">
+                <div class="flex items-center mb-4">
+                    <img src="./images/123828.webp" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <div class="font-semibold">Sarah Williams</div>
+                        <div class="text-gray-500">Marketing Director, NextGen Solutions</div>
+                    </div>
+                </div>
+                <p class="text-gray-600 mb-4">"The analytics tools provided unprecedented insights into our customer behavior. Implementation was seamless!"</p>
+                <div class="flex items-center text-yellow-400">
+                    ★★★★★
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="p-8 bg-white rounded-xl shadow-sm hover:shadow-md transition-all animate-on-scroll opacity-0">
+                <div class="flex items-center mb-4">
+                    <img src="./images/3662400.webp" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <div class="font-semibold">David Chen</div>
+                        <div class="text-gray-500">Founder, StartupHub</div>
+                    </div>
+                </div>
+                <p class="text-gray-600 mb-4">"From onboarding to ongoing support, the experience has been exceptional. Our revenue grew 300% in 8 months."</p>
+                <div class="flex items-center text-yellow-400">
+                    ★★★★★
+                </div>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="p-8 bg-white rounded-xl shadow-sm hover:shadow-md transition-all animate-on-scroll opacity-0">
+                <div class="flex items-center mb-4">
+                    <img src="./images/3952130.webp" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <div class="font-semibold">Emily Rodriguez</div>
+                        <div class="text-gray-500">Operations Manager, E-Commerce Pro</div>
+                    </div>
+                </div>
+                <p class="text-gray-600 mb-4">"The automation features saved us 20+ hours weekly. Integration with existing systems was flawless."</p>
+                <div class="flex items-center text-yellow-400">
+                    ★★★★★
+                </div>
+            </div>
+
+            <!-- Testimonial 5 -->
+            <div class="p-8 bg-white rounded-xl shadow-sm hover:shadow-md transition-all animate-on-scroll opacity-0">
+                <div class="flex items-center mb-4">
+                    <img src="./images/123828.webp" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <div class="font-semibold">James Thompson</div>
+                        <div class="text-gray-500">CTO, Digital Nexus</div>
+                    </div>
+                </div>
+                <p class="text-gray-600 mb-4">"Security features are enterprise-grade. Our compliance team was thoroughly impressed with the audits."</p>
+                <div class="flex items-center text-yellow-400">
+                    ★★★★★
+                </div>
+            </div>
+
+            <!-- Testimonial 6 -->
+            <div class="p-8 bg-white rounded-xl shadow-sm hover:shadow-md transition-all animate-on-scroll opacity-0">
+                <div class="flex items-center mb-4">
+                    <img src="./images/3952130.webp" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <div class="font-semibold">Olivia Park</div>
+                        <div class="text-gray-500">Product Lead, TechSphere</div>
+                    </div>
+                </div>
+                <p class="text-gray-600 mb-4">"Customer support responds faster than any vendor we've worked with. Truly partners in our success!"</p>
+                <div class="flex items-center text-yellow-400">
+                    ★★★★★
+                </div>
+            </div>
+        </div>
+
+        <!-- View More Button -->
+        <div class="text-center mt-12">
+            <button class="bg-indigo-600 text-white px-8 py-3 rounded-lg hover:bg-indigo-700 transition-colors">
+                View More Testimonials
+            </button>
+        </div>
+    </div>
+</section>
+
+
+<!-- Team Section -->
+<section id="team" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">Meet Our Team</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">The passionate professionals driving your success</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Team Member 1 -->
+            <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all animate-on-scroll opacity-0">
+                <img src="./images/360_F_757592568_v96NBkRahyTl9QFa99qpcmePYnfoXwZq.jpg" alt="Team Member" class="w-full h-60 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-1">Sarah Johnson</h3>
+                <p class="text-gray-500 mb-4">CEO & Founder</p>
+                <div class="flex space-x-3 justify-center">
+                    <a href="#" class="text-gray-400 hover:text-indigo-600 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <!-- Twitter Icon -->
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+
+                        <!-- GitHub Icon -->
+                        <a href="#" class="text-gray-400 hover:text-gray-700 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all animate-on-scroll opacity-0">
+                <img src="./images/123828.webp" alt="Team Member" class="w-full h-60 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-1">Michael Chen</h3>
+                <p class="text-gray-500 mb-4">CTO</p>
+                <div class="flex space-x-3 justify-center">
+                    <a href="#" class="text-gray-400 hover:text-indigo-600 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <!-- Twitter Icon -->
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+
+                        <!-- GitHub Icon -->
+                        <a href="#" class="text-gray-400 hover:text-gray-700 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all animate-on-scroll opacity-0">
+                <img src="./images/3662400.webp" alt="Team Member" class="w-full h-60 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-1">Emma Wilson</h3>
+                <p class="text-gray-500 mb-4">Marketing Director</p>
+                <div class="flex space-x-3 justify-center">
+                    <a href="#" class="text-gray-400 hover:text-indigo-600 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <!-- Twitter Icon -->
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+
+                        <!-- GitHub Icon -->
+                        <a href="#" class="text-gray-400 hover:text-gray-700 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                </div>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all animate-on-scroll opacity-0">
+                <img src="./images/3952130.webp" alt="Team Member" class="w-full h-60 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-1">David Patel</h3>
+                <p class="text-gray-500 mb-4">Lead Developer</p>
+                <div class="flex space-x-3 justify-center">
+                    <a href="#" class="text-gray-400 hover:text-indigo-600 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <!-- Twitter Icon -->
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+
+                        <!-- GitHub Icon -->
+                        <a href="#" class="text-gray-400 hover:text-gray-700 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
+            <p class="text-gray-600">We'd love to hear from you! Reach out for inquiries or partnerships.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12">
+            <!-- Contact Form -->
+            <div class="bg-white p-8 rounded-xl shadow-sm">
+                <form class="space-y-6" id="contactForm">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-gray-700 mb-2">Full Name</label>
+                            <input type="text" name="name" required 
+                                   class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Email Address</label>
+                            <input type="email" name="email" required 
+                                   class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-transparent">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 mb-2">Phone Number</label>
+                        <input type="tel" name="phone" 
+                               class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-transparent">
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 mb-2">Subject</label>
+                        <select name="subject" required 
+                                class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-transparent">
+                            <option value="">Select a subject</option>
+                            <option>General Inquiry</option>
+                            <option>Partnership</option>
+                            <option>Technical Support</option>
+                            <option>Feedback</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 mb-2">Message</label>
+                        <textarea name="message" rows="5" required 
+                                  class="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-transparent"></textarea>
+                    </div>
+
+                    <button type="submit" 
+                            class="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 transition-colors">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contact Info & Map -->
+            <div class="space-y-8">
+                <!-- Contact Info -->
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-8 mr-4 text-indigo-600">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2">Visit Us</h3>
+                                <p class="text-gray-600">123 Business Street<br>New York, NY 10001<br>United States</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-8 mr-4 text-indigo-600">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2">Call Us</h3>
+                                <p class="text-gray-600">
+                                    <a href="tel:+11234567890" class="hover:text-indigo-600">+1 (123) 456-7890</a><br>
+                                    <a href="tel:+11234567891" class="hover:text-indigo-600">+1 (123) 456-7891</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-8 mr-4 text-indigo-600">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2">Email Us</h3>
+                                <p class="text-gray-600">
+                                    <a href="mailto:info@businesspro.com" class="hover:text-indigo-600">info@businesspro.com</a><br>
+                                    <a href="mailto:support@businesspro.com" class="hover:text-indigo-600">support@businesspro.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="h-96 rounded-xl overflow-hidden shadow-sm">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.617539822079!2d-73.98773128459364!3d40.7484444793279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b30eac9f%3A0xaca05ca48ab5ac2c!2s350%205th%20Ave%2C%20New%20York%2C%20NY%2010118%2C%20USA!5e0!3m2!1sen!2s!4v1629990000000!5m2!1sen!2s" 
+                        class="w-full h-full border-0" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="bg-indigo-600 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-4">Subscribe to Our Newsletter</h2>
+        <p class="mb-8">Get latest updates and exclusive offers</p>
+        <div class="max-w-md mx-auto gap-4">
+            <input type="email" placeholder="Enter your email" class=" px-4 py-3 rounded-lg text-gray-900">
+            <button class="bg-white text-indigo-600 px-6 py-3 mt-4 rounded-lg font-semibold hover:bg-gray-100">Subscribe</button>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+            <!-- Company Info -->
+            <div class="space-y-4">
+                <h3 class="text-white text-lg font-semibold">BusinessPro</h3>
+                <p class="text-sm">Transforming businesses through innovative digital solutions</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <!-- Twitter Icon -->
+                    </a>
+                    <!-- Add other social icons -->
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-white mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Services</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Case Studies</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                </ul>
+            </div>
+
+            <!-- Resources -->
+            <div>
+                <h4 class="text-white mb-4">Resources</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">FAQ</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Documentation</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Support</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h4 class="text-white mb-4">Contact</h4>
+                <ul class="space-y-2 text-sm">
+                    <li>123 Business Street</li>
+                    <li>New York, NY 10001</li>
+                    <li><a href="tel:+1223513990" class="hover:text-white transition-colors">+1 (123) 456-7890</a></li>
+                    <li><a href="mailto:info@businesspro.com" class="hover:text-white transition-colors">info@businesspro.com</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright & Legal -->
+        <div class="border-t border-gray-800 pt-8">
+            <div class="md:flex md:items-center md:justify-between text-center">
+                <p class="text-sm">&copy; 2025 Mohamed Yousry. All rights reserved.</p>
+                <div class="mt-4 md:mt-0 space-x-6">
+                    <a href="#" class="text-sm hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-sm hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="text-sm hover:text-white transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"> </script>
+</body>
+</html>
